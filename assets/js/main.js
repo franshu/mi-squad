@@ -18,8 +18,13 @@ var belen = new MiembroSquad("Belen","Recabal",29,"Andar en Bici, Netflix");
 var fran= new MiembroSquad("Francisca","Ojeda",28,"Roller Derby, lettering");
 
 //metodos
-this.mostrarSquad = function(){
-	return(<h2>this.nombre + this.apellido <br> + this.edad <br>+this.hobbies)
+//this.mostrarSquad = function(){
+//	return(<h2>this.nombre + this.apellido <br> + this.edad <br>+this.hobbies)
 }
 //llamar al metodo
-console.log(cami.mostrarSquad);
+//console.log(cami.mostrarSquad);
+
+
+var resultado = document.getElementById("lista1");
+var ListaSquad = ("Nombre: " + cami.nombre + cami.apellido + "<br> " + "Edad: " + cami.edad + "<br> " +  "Hobbies: " + cami.hobbies);
+resultado.innerHTML = ListaSquad; 
